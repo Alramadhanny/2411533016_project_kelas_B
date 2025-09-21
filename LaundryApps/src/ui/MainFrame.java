@@ -61,6 +61,12 @@ public class MainFrame extends JFrame {
 		JButton btnNewButton_1 = new JButton("LAYANAN");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				setVisible(false);
+		        dispose();
+
+		        // Buat instance baru dan tampilkan ServiceFrame
+		        ServiceFrame serviceFrame = new ServiceFrame();
+		        serviceFrame.setVisible(true);
 			}
 		});
 		btnNewButton_1.setBounds(169, 77, 134, 63);
